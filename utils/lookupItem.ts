@@ -27,8 +27,8 @@
 export function lookupItem<T, K extends keyof T>(
   array: T[],
   key: K
-) {
-  const map = new Map(array.map(item => [item[key], item]));
+): (value: T[K]) => T | null {
+  const map = new Map(array.map((item) => [item[key], item]));
   return (value: T[K]): T | null => {
     return map.get(value) ?? null;
   };

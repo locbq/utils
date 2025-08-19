@@ -1,0 +1,18 @@
+# Dependency directories
+# This prevents the large node_modules folder from being committed.
+node_modules/
+
+# Build output
+# These directories typically contain compiled code (e.g., from TypeScript to JavaScript).
+dist/
+build/
+
+# Environment variables
+# Keep sensitive information like API keys out of your repository.
+.env
+.env.local
+
+# IDEs and editors
+# Prevents editor-specific setting files from being shared.
+.vscode/
+.idea/
